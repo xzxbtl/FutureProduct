@@ -1,0 +1,192 @@
+body {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    color: #081130;
+}
+
+.header-block{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.header-block {
+    width: 1920px;
+    height: 82px;
+    margin-top: 37px;
+    border: 1px;
+}
+
+.logo{
+    position: absolute;
+    width: 179px;
+    height: 31px;
+    margin-top: 47px;
+    margin-left: 370px;
+    gap: 17px;
+    font-size: 21px;
+    line-height: 30.03px;
+    font-weight: 500;
+}
+
+.adress {
+    position: absolute;
+    width: 151px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    margin-top: 46px;
+    margin-left: 1099px;
+    font-weight: 200;
+    gap: 10px;
+}
+
+#icon-adress{
+    width: 17px;
+    height: 17px;
+}
+
+.phone{
+    position: absolute;
+    width: 231px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    margin-top: 37px;
+    margin-left: 1319px;
+    gap: 15px;
+}
+
+.number-time{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 51px;
+}
+
+.number-time strong{
+    width: 180px;
+    height: 31px;
+    font-size: 20px;
+    line-height: 30.4px;
+    font-weight: 700;
+}
+
+.number-time p{
+    width: 179px;
+    height: 20px;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 19.5px;
+    margin-top: 0px;
+}
+
+#icon-phone{
+    width: 19px;
+    height: 19px;
+    margin-top: 6px;
+    margin-left: 19px;
+}
+
+.line{
+    position: absolute;
+    width: 1920px;
+    margin-top: 119px;
+    border: 1px solid #7E868E;
+    opacity: .1;    
+}
+
+.block-stock{
+    width: 647px;
+    height: 462px;
+    margin-top: 240px;
+    margin-left: 370px;
+    gap: 40px;
+    color: #fff;
+}
+
+.name-stock {
+    width: 647px;
+    height: 334px;
+    gap: 24px;
+}
+
+.name-stock strong{
+    width: 647px;
+    height: 180px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1px;
+}
+
+.name-stock p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 544px;
+    height: 69px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.block-button {
+    display: flex;
+    width: 507px;
+    height: 88px;
+    gap: 20px;
+}
+
+#catalog-button{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27.36px;
+    align-items: center;
+    width: 277px;
+    height: 88px;
+    border-radius: 8px;
+    padding: 30px 50px 30px  50px;
+    gap: 10px;
+    background-color: #FED84C;
+}
+
+
+.block-button p{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    width: 210px;
+    height: 48px;
+}
+
+
+#leathet-icon {
+    width: 275px;
+    height: 286px;
+    top: 1294px;
+    left: 138px;
+    rotate: 156;
+}
+
+#raswberry-icon {
+    width: 195px;
+    height: 201px;
+    top: 340px;
+    left: -95px;
+    margin-left: -40px;
+    margin-top: 570px;
+    rotate: 45;
+}
+
+#raswberry-icon-second{
+    width: 170px;
+    height: 175px;
+    top: 108px;
+    left: 1845px;
+    margin-left: 1641px;
+    margin-top: 290px;
+}
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes - Main</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="preconnect" href="{https://fonts.googleapis.com}">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="{% static 'js/main.js' %}" defer></script>
+    <style>
+    body{
+        background-image: url("{% static 'media/bg.jpg' %}");
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-block">
+            <div class="logo">Сладкий сундук</div>
+            <div class="adress">
+                <img src="{% static 'media/icon-adress.svg' %}" id="icon-adress">
+                <p>г. Санкт Петербург, <br>ул. Куйбышева 31</p>
+            </div>
+            <div class="phone">
+                <img src="{% static 'media/phone.svg' %}" id="icon-phone">
+                <div class="number-time">
+                    <strong>8 (812) 844-95-49</strong>
+                    <p>Ежедневно с 9:00 до 20:00</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <img src="{% static 'media/raswberry.svg' %}" id="raswberry-icon">
+            <img src="{% static 'media/raswberry.svg' %}" id="raswberry-icon-second">
+        </div>
+    </header>
+    <nav>
+        <div class="block-stock">
+            <div class="name-stock">
+                <strong>Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу</strong>
+                <p>Приготовим за 3 часа в день заказа. Доставка на авто в холодильнике.</p>
+            </div>
+            <div class="block-button">
+                <a href="{% url 'catalog:main' %}" style="text-decoration: none;">
+                <button id="catalog-button" style="cursor: pointer;">Перейти в каталог</button>
+                </a>
+                <p>9 различных видов <br>на выбор</p>
+            </div>
+        </div>
+    </nav>
+    <!--<img src="/project/static/media/leathet.svg" id="leathet">!-->
+</body>
+</html>

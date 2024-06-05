@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать Заказ</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+    body{
+        background-image: url("{% static 'media/back-site.jpg' %}");
+        background-size: cover;
+    }
+    </style>
+    <title>{{ title }}</title>
+</head>
+<body>
+<main>
+    <div class="container mt-5">
+        <div class="block-profile">
+            <h3 class="text-profile-title">Создать Заказ</h3>
+            <div class="line-profile" style="margin-left: -12px;"></div>
+            <form action="{% url 'catalog:wish' %}" method="post" enctype="multipart/form-data" class="mt-4">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="id_image" class="form-label">Изображение</label>
+                            <div class="input-group">
+                                {% if form.image.value %}
+                                    <img src="{{ form.image.value.url }}" alt="Аватар пользователя"
+                                         class="img-fluid rounded-circle" style="max-width: 150px;">
+                                {% else %}
+                                    <img src="{% static 'media/404.png' %}" alt="Аватар пользователя"
+                                         class="img-fluid rounded-circle" style="max-width: 150px;">
+                                {% endif %}
+                                <div class="input-group-append">
+                                    <input type="file" name="image" class="form-control-file" id="id_image"
+                                           accept="image/*">
+                                </div>
+                            </div>
+                            {% if form.image.errors %}
+                                <div class="alert alert-danger alert-dismissible fade show">{{ form.image.errors }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="id_first_name" class="form-label">Имя</label>
+                                    <input type="text" class="form-control" name="first_name" id="id_first_name"
+                                           placeholder="Введите ваше имя" value="{{ form.username.value|default:'Не указано' }}" required>
+                                    {% if form.first_name.errors %}
+                                        <div class="alert alert-danger alert-dismissible fade show">{{ form.first_name.errors }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="id_username" class="form-label">Имя пользователя</label>
+                                    <input type="text" class="form-control" name="username" id="id_username"
+                                           placeholder="Введите имя пользователя" value="{{ form.username.value|default:'Не указано' }}"
+                                           required>
+                                    {% if form.username.errors %}
+                                        <div class="alert alert-danger alert-dismissible fade show">{{ form.username.errors }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="id_phone" class="form-label">Телефон</label>
+                                    <input type="tel" class="form-control" name="phone" id="id_phone"
+                                           placeholder="Введите ваш телефон" value="{{ form.phone.value|default:'Не указано' }}" required>
+                                    {% if form.phone.errors %}
+                                        <div class="alert alert-danger alert-dismissible fade show">{{ form.phone.errors }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="id_wish" class="form-label">Пожелание</label>
+                                    <textarea class="form-control" name="wish" id="id_wish"
+                                              placeholder="Введите ваше пожелание">{{ form.wish.value|default:'Не указано' }}</textarea>
+                                    {% if form.wish.errors %}
+                                        <div class="alert alert-danger alert-dismissible fade show">{{ form.wish.errors }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+            </form>
+        </div>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

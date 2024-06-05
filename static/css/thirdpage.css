@@ -1,0 +1,486 @@
+article {
+    background-color: #fff;
+    margin: 0;
+}
+
+
+
+/* Text */
+.block-consult{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+
+    position: relative;
+    width: 580px;
+    height: 637px;
+    left: 362px;
+    top: 97px;
+}
+.block-consult-row {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 36px;
+
+    width: 580px;
+    height: 499px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#sector-consult-upper-text{
+        /* Надзаголовок */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
+
+    width: 200px;
+    height: 37px;
+
+    /* Серый 11 */
+    background: #F2F6FA;
+    border-radius: 5px;
+    font-weight: 400;
+    
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.block-consult-text h3{
+    /* Заголовок */
+
+    width: 580px;
+    height: 180px;
+
+    /* Заголовки / 48 px, Medium */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    /* or 125% */
+    letter-spacing: -1px;
+
+    /* Серый 1 */
+    color: #2E363E;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.block-consult-text-about{
+    /* Bullits */
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    width: 438px;
+    height: 222px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.block-consult-text-about li{
+        /* text */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    width: 401px;
+    height: 54px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.button-ask{
+    /* Text & button */
+
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 20px;
+    width: 299px;
+    height: 60px;
+    background-color: #FED84C;
+    border-radius: 8px;
+    padding: 30px 50px 30px 50px;
+    font-family: 'Montserrat';
+    text-align: center;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.block-confetion-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    position: relative;
+    width: 287px;
+    height: 112px;
+    left: 868px;
+    top: 544px;
+    z-index: 1;
+}
+
+#img-girl{
+    z-index: 0;
+}
+
+.block-confetion-text-upper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    background-color: #2E363E;
+    padding: 15px 0px 15px 0px;
+    gap: 10px;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: center;
+    border-radius: 8px;
+    margin-left: 1000px;
+    margin-top: -200px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    
+
+    width: 287px;
+    height: 60px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.block-confetion-text-lower{
+    /* Text */
+
+/* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: space-around;
+    margin-left: 1030px;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 17px;
+    color: #2E363E;
+    line-height: 22px;
+    font-weight: 400;
+
+    width: 218px;
+    height: 52px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+
+
+
+.block-confetion-text-upper,
+.block-confetion-text-lower {
+    position: relative;
+    z-index: 1;
+}
+
+#img-girl {
+z-index: 0;
+position: absolute;
+}
+
+
+footer {
+    margin: 0;
+    background-color: #081130;
+}
+
+.block-footer{
+    /* Form */
+
+/* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 99px;
+    gap: 36px;
+
+    position: relative;
+    width: 1180px;
+    height: 394px;
+    left: 250px;
+    top: 300px;
+
+    /* Белый */
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.footer-text{
+    /* Header */
+
+/* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 880px;
+    height: 91px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.footer-text h3{
+    /* Заголовок */
+
+    width: 880px;
+    height: 48px;
+
+    /* Заголовки / 36px, Bold */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    /* identical to box height, or 48px */
+    text-align: center;
+
+    /* Серый 1 */
+    color: #2E363E;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer-text p{
+    /* Подзаголовок */
+    width: 880px;
+    height: 31px;
+    /* Текст / 21px, Regular */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 143%;
+    /* or 30px */
+    text-align: center;
+    letter-spacing: -0.2px;
+
+    /* Серый 1 */
+    color: #2E363E;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.phone-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 780px;
+    height: 86px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: relative;
+    margin-top: 100px;
+}
+
+.footer-number{
+    /* Fields & checkbox */
+
+/* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 780px;
+    height: 127px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+#phone-number{
+    /* Field */
+
+    width: 380px;
+    height: 85px;
+
+    /* Серый 11 */
+    background-color: #F2F6FA;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: none;
+}
+
+#make-order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 29px 41px;
+    gap: 10px;
+    margin-left: 385px;
+
+    width: 380px;
+    height: 86px;
+
+    /* Оранжевый */
+    background: #FED84C;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    font-weight: 500;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#input-phone-text{
+    /* Номер телефона */
+    position: absolute; /* Теперь используйте абсолютное позиционирование */
+    width: 132px;
+    height: 24px;
+    left: 58px; /* Задайте позицию слева */
+    top: 50%; /* Задайте позицию по вертикали */
+    transform: translateY(-50%); /* Сдвиньте вверх на половину высоты */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #7E868E;
+    text-align: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    border-radius: 100px;
+    margin-top: -2px;
+    margin-left: 10px;
+}
+
+#input-phone{
+    margin-left: -380px;
+}
+
+#text-flexbox-accept{
+    /* Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных данных */
+    width: 490px;
+    height: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 130%;
+    color: #7E868E;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.accept-terms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#chek-accept{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px 0px;
+    gap: 10px;
+    width: 12px;
+    height: 14px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

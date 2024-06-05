@@ -1,0 +1,257 @@
+body{
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 1920px;
+    margin: 0;
+    padding: 0;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.text-welcome {
+    width: 1180px;
+    height: 60px;
+    margin-left: 370px;
+    margin-top: 80px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    align-items: center;
+    color: #2E363E;
+}
+
+.cart img{
+    width: 380px;
+    height: 245px;
+    border-radius: 10px, 10px, 0px, 0px;
+}
+
+#name-cart {
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+#description{
+    width: 240px;
+    height: 48px;
+    margin-left: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2E363E;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#price{
+    width: 208px;
+    height: 36px;
+    margin-left: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #434B53;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.container-block-carts {
+    margin-left: 60px;
+    margin-top: 80px;
+    display: flex;
+    z-index: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cart-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.cart {
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.link-for-cart {
+    text-decoration: none;
+    color: black;
+}
+
+.upload-photo-order {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* leaf */
+#leaf-first{
+    position: absolute;
+    width: 108.93px;
+    height: 112.99px;
+    left: 369.84px;
+    top: 1386.15px;
+
+    background: url(leaf.png);
+    /* Размытие 2 */
+    filter: blur(13.5px);
+    transform: rotate(92.61deg);
+}
+
+#leaf-second{
+    position: absolute;
+    width: 161px;
+    height: 167px;
+    left: 1684px;
+    top: 1192px;
+
+    background: url(leaf.png);
+    /* Размытие 2 */
+    filter: blur(13.5px);
+    transform: rotate(-180deg);
+}
+
+#berry{
+    /* berry */
+    position: absolute;
+    width: 170px;
+    height: 174px;
+    left: 214px;
+    top: 380.19px;
+
+    background: url(berry.png);
+    /* Размытие */
+    filter: blur(6.5px);
+    transform: rotate(-63.54deg);
+}
+
+
+#buy{
+    margin-left: 80px;
+    width: 163px;
+    height: 68px;
+    border-radius: 8px;
+    padding: 20px 40px 20px 40px;
+    gap: 10px;
+    background-color: #FED84C;
+    border: none;
+}
+
+section {
+    background-color: #081130;
+    margin: 0;
+}
+
+
+.block-phone{
+    /* Text */
+/* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 481px;
+    height: 454px;
+    margin-left: 120vh;
+    margin-top: -70vh;
+}
+
+#sector-upper-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
+    width: 226px;
+    height: 27px;
+    background: #F2F6FA;
+    border-radius: 5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2E363E;
+}
+
+#sector-main-text{
+    width: 481px;
+    height: 180px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#sector-lower-text{
+    width: 481px;
+    height: 61px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 143%;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+#upload-photo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 50px;
+    gap: 10px;
+    width: 320px;
+    height: 88px;
+    background: #FED84C;
+    border-radius: 8px;
+    flex: none;
+    flex-grow: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 152%;
+    display: flex;
+    text-align: center;
+    color: #2E363E;
+    order: 0;
+    white-space: nowrap;
+    border: none;
+}
+
+

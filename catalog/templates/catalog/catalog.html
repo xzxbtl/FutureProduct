@@ -1,0 +1,125 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/secondpage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/thirdpage.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script src="{% static 'js/main.js' %}" defer></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Catalog - Cakes</title>
+</head>
+<body>
+<main>
+    <div class="text-welcome">Для любых событий и дорогих вам людей</div>
+    <div class="container-block-carts">
+        <div class="cart-row">
+            {% for product in products %}
+            <div class="cart">
+                <a class="link-for-cart" href="{% url 'catalog:product' product.slug %}">
+                {% if product.img %}
+                    <img src="{{ product.img.url }}" id="cart-image" alt="{{ product.name }}">
+                {% else %}
+                    <img src="{% static 'media/404.png' %}" id="cart-image" alt="...">
+                {% endif %}
+                <div class="text-under-image">
+                    <h3 id="name-cart">
+                        {% autoescape off %}
+                                {% if product.headline %}
+                                    {{ product.headline|truncatechars:100 }}
+                                {% else %}
+                                    {{ product.name }}
+                                {% endif %}
+                            {% endautoescape %}
+                    </h3>
+                    <p id="description">
+                        {% autoescape off %}
+                            {% if product.bodyline %}
+                                {{ product.bodyline|truncatechars:140 }}
+                            {% else %}
+                                {{ product.description|truncatechars:65 }}
+                            {% endif %}
+                        {% endautoescape %}
+                    </p>
+                </div>
+                <div class="price-button">
+                    <p id="price">{{product.price}} ₽/шт. </p>
+                    <button id="buy" style="cursor: pointer;">Заказать</button>
+                </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+<section>
+    <div class="background">
+        <img src="{% static 'media/sky.svg' %}">
+    </div>
+    <img src="{% static 'media/phone-image.svg' %}">
+    <div class="block-phone">
+        <div class="block-phone-text">
+            <p id="sector-upper-text">Не нашли ничего нужного?</p>
+            <h3 id="sector-main-text">Приготовим заказ любой сложности по фото или эскизу</h3>
+            <p id="sector-lower-text">Загрузите фотографию или эскиз капкейков и мы рассчитаем стоимость за 30 минут</p>
+            <button id="upload-photo" style="cursor: pointer;"><a href="{% url 'catalog:wish' %}" class="upload-photo-order">Загрузить фотографию</a></button>
+        </div>
+    </div>
+</section>
+<img src="{% static 'media/sky-up.svg' %}" style="margin-top: -430px;">
+<img src="{% static 'media/sky-up.svg' %}" style="margin-top: -430px;">
+<article>
+    <div class="block-consult">
+        <div class="block-consult-row">
+            <div class="block-consult-text">
+                <p id="sector-consult-upper-text">КТО БУДЕТ ГОТОВИТЬ?</p>
+                <h3>Лично приготовлю и всё красиво упакую для вашего события</h3>
+            </div>
+            <div class="block-consult-text-about">
+                <li>Проконсультирую по выбору капкейков и придумаю нестандартную идею</li>
+                <li>Приготовлю капкейки для вашего события, которые обязательно всем понравятся </li>
+                <li>Аккуратно и красиво всё упакую, если вы хотите сделать приятный подарок</li>
+            </div>
+            <button class="button-ask" style="cursor: pointer;">Задать вопрос Юлии</button>
+        </div>
+    </div>
+    <div class="confectioner-block">
+        <div class="block-confetion-text-upper">
+            <p>Юлия Кондратьева</p>
+        </div>
+        <div class="block-confetion-text-lower">
+            <p>ВАШ КОНДИТЕР</p>
+        </div>
+        <img src="{% static 'media/girl.svg' %}" style="margin-left: 1100px; margin-top: -500px;" id="img-girl">
+    </div>
+</article>
+<footer>
+    <img src="{% static 'media/sky.svg' %}">
+    <div class="block-footer">
+        <div class="footer-text">
+            <h3>Чтобы сделать заказ, укажите ваш телефон</h3>
+            <p>Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</p>
+        </div>
+        <div class="footer-number">
+            <div class="phone-button">
+                <input type="text" id="phone-number" data="phone">
+                <img src="{% static 'media/phone-for-input.svg' %}" id="input-phone">
+                <p id="input-phone-text">Номер телефона</p>
+                <button class="make-order" id="make-order" style="cursor: pointer;">Сделать Заказ</button>
+            </div>
+            <div class="accept-terms">
+                <input type="checkbox" id="chek-accept" data="accept">
+                <p id="text-flexbox-accept">Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных данных</p>
+            </div>
+        </div>
+    </div>
+     <div style="height:400px; width:100%"></div>
+</footer>
+</body>
+</html>
